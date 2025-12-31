@@ -129,77 +129,22 @@ footer {
 
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar */
-.navbar {
-  background: #0004ff;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu li a {
-  display: block;
-  padding: 15px 25px;
-  color: white;
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  background: #3700ff;
-}
-
-/* Dropdown */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #0000fc;
-  list-style: none;
-  min-width: 160px;
-  display: none;
-}
-
-.dropdown-menu li a {
-  padding: 12px 20px;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 .navbar{
   background:#2a4dff;
   padding:20px;
 }
 
+/* Parent */
 .lang-box{
   position:relative;
   width:150px;
   color:#fff;
-  cursor:pointer;
 }
 
 /* Title */
 .lang-title{
-  font-size:18px;
   text-align:center;
+  cursor:pointer;
 }
 
 /* Dropdown */
@@ -210,19 +155,20 @@ body {
   width:100%;
   background:#3a5cff;
   display:none;
+  z-index:9999; /* VERY IMPORTANT */
 }
 
 .lang-menu div{
   padding:12px;
   text-align:center;
+  cursor:pointer;
 }
 
 .lang-menu div:hover{
   background:#1d3fff;
 }
 
-/* Hover show */
+/* KEY FIX */
 .lang-box:hover .lang-menu{
   display:block;
 }
-
