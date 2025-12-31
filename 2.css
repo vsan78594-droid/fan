@@ -183,3 +183,46 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.navbar{
+  background:#2a4dff;
+  padding:20px;
+}
+
+.lang-box{
+  position:relative;
+  width:150px;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* Title */
+.lang-title{
+  font-size:18px;
+  text-align:center;
+}
+
+/* Dropdown */
+.lang-menu{
+  position:absolute;
+  top:40px;
+  left:0;
+  width:100%;
+  background:#3a5cff;
+  display:none;
+}
+
+.lang-menu div{
+  padding:12px;
+  text-align:center;
+}
+
+.lang-menu div:hover{
+  background:#1d3fff;
+}
+
+/* Hover show */
+.lang-box:hover .lang-menu{
+  display:block;
+}
+
